@@ -3,9 +3,9 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone_app/utils/color_constants.dart';
 import 'package:netflix_clone_app/view/HomeScreen/tabs/downloads_tab.dart';
-import 'package:netflix_clone_app/view/HomeScreen/tabs/inspire_tab.dart';
+
 import 'package:netflix_clone_app/view/HomeScreen/tabs/home_tab.dart';
-import 'package:netflix_clone_app/view/HomeScreen/tabs/new_and_hot_tab.dart';
+
 import 'package:netflix_clone_app/view/HomeScreen/tabs/search_tab.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -35,8 +35,7 @@ class HomeScreen extends StatelessWidget {
               child: TabBarView(
                 children: [
                   HomeTab(),
-                  NewAndHotTab(),
-                  InspireTab(),
+                  
                   SearchTab(),
                   DownloadsTab(),
                 ],
@@ -52,8 +51,7 @@ class HomeScreen extends StatelessWidget {
             unselectedLabelColor: Colors.grey,
             tabs: [
               Tab(icon: Icon(Icons.home), text: 'Home'),
-              Tab(icon: Icon(Icons.whatshot), text: 'New & Hot'),
-              Tab(icon: Icon(Icons.flash_on), text: 'inspire'),
+              
               Tab(icon: Icon(Icons.search), text: 'Search'),
               Tab(icon: Icon(Icons.download), text: 'Downloads'),
             ],

@@ -22,14 +22,6 @@ class OnboardingScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(height: 50),
-              Text(
-                'Netflix',
-                style: TextStyle(
-                  color: Colors.red,
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
               Spacer(),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30),

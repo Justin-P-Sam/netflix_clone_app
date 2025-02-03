@@ -15,7 +15,11 @@ class HomeTab extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          leading: Image.asset(ImageConstants.MyAppLogo2),
+          leading:CircleAvatar(
+            backgroundColor: Colors.black,
+            radius: 40,
+            backgroundImage: AssetImage(ImageConstants.MyAppLogo2),
+          ),
           actions: const [
             Icon(Icons.cast, color: Colors.white),
             SizedBox(width: 10),

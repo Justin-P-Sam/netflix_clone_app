@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-      Duration(seconds: 5),
+      Duration(seconds: 3),
       () {
         Navigator.pushReplacement(
           context,
@@ -36,8 +36,8 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Image.asset(
           ImageConstants.MyAppLogo,
-          height: 200,
-          width: 250,
+          height: double.infinity,  
+          width: double.infinity, 
           fit: BoxFit.fill,
         ),
       ),
